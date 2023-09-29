@@ -2,6 +2,7 @@ import './Section1.css';
 
 import linkedn from '../../assets/link.png';
 import github from '../../assets/github.png';
+import seta from '../../assets/seta.png';
 export default function Section1() {
     return (
         <>
@@ -16,6 +17,7 @@ export default function Section1() {
                         <img className="icone git" src={github} alt="Git Link"/>
                     </a>
                 </div>
+                <img className="icone seta" src={seta} alt="Seta para baixo"/>
             </div>
 
 
