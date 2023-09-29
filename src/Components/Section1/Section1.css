@@ -13,8 +13,10 @@
     height: 100vh;
     width: 99vw;
     margin: 0;
+    align-items: center;
 }
 .container-section1 h1{
+    padding-top: 90px;
     font-family: 'Great Vibes', cursive;
     font-size: 90px;
     color: white;
@@ -31,6 +33,21 @@
     width: 30px;
     height: 30px;
 }
+.seta{
+    padding-top: 90px;
+    animation: go-back 1s infinite alternate;
+}
 .git{
     margin-left: 20px;
+}
+
+
+
+@keyframes go-back {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
