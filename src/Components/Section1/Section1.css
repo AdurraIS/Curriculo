@@ -22,9 +22,14 @@
     color: white;
 }
 .container-section1 h2{
+    border-right: 2px solid #31a1fd;
     color: #31a1fd;
     font-size: 25px;
+    animation: line 500ms steps(40) infinite normal, typing 2s steps(20) normal;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 .container-section1 .container-links{
     margin-top: 20px;
     flex-direction: row;
@@ -49,5 +54,20 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes line {
+    0% {
+    }
+    100% {
+        border-right-color: transparent;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 234.53px;
     }
 }
